@@ -1,7 +1,16 @@
-#NAV {
-list-style-type:none;
-padding:0;
-margin:0;
-display:flex;
-justify-content:center;
+.container{
+
+    width:80%;
+    max-width:1000px;
+    margin:0 auto;
+}
+nav{
+background-color: #181820;
+border-bottom: 1px solid #2a2a35;
+padding:15px 0;
+}
+.nav_contanier{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
