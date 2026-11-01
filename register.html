@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spartanZ gaming - Request a Custom Build</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+    <header class="navbar">
+        <div class="logo">spartan<span>Z</span>gaming</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="register.html" class="active pill-link">Register</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="form-header-section">
+        <h1>Request a custom build</h1>
+        <p>Fill out the details below to start designing your dream gaming PC setup.</p>
+    </section>
+
+    
+    <section class="form-section">
+        <div class="form-card">
+            <form action="#" method="POST">
+                
+               
+                <div class="form-group">
+                    <label for="fullname">Full name</label>
+                    <input type="text" id="fullname" class="input-field valid" value="Zain Maqsood" placeholder="Enter your full name">
+                    <span class="validation-msg success-text">Looks good!</span>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-field invalid" value="zain.invalid-email" placeholder="Enter your email">
+                    <span class="validation-msg error-text">Please enter a valid email address.</span>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" class="input-field" placeholder="••••••••••••">
+                </div>
+
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Preferred consultation date</label>
+                        <input type="date" id="date" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <input type="time" id="time" class="input-field">
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="ref-link">Reference build link</label>
+                    <input type="url" id="ref-link" class="input-field focus-outline" placeholder="https://www.spartanzgaming.com/ref/build">
+                </div>
+
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Case colour swatch</label>
+                        <div class="color-swatches">
+                            <input type="color" id="color-picker" value="#66fcf1">
+                            <span class="color-label">Select Custom Accent</span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="monitors">Number of monitors</label>
+                        <input type="number" id="monitors" class="input-field" min="1" max="5" value="2">
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="budget">Budget range slider: <span id="budget-val">Rs. 300,000</span></label>
+                    <input type="range" id="budget" class="range-slider" min="100000" max="1000000" step="25000" value="300000" oninput="document.getElementById('budget-val').innerText = 'Rs. ' + Number(this.value).toLocaleString()">
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="cpu">CPU preference</label>
+                    <select id="cpu" class="input-field">
+                        <option value="i5">Intel Core i5 / Ryzen 5</option>
+                        <option value="i7" selected>Intel Core i7 / Ryzen 7</option>
+                        <option value="i9">Intel Core i9 / Ryzen 9</option>
+                    </select>
+                </div>
+
+                
+                <div class="form-group">
+                    <label>Build type</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="build-type" checked> Gaming</label>
+                        <label><input type="radio" name="build-type"> Editing</label>
+                        <label><input type="radio" name="build-type"> Office</label>
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label>Accessories</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" checked> RGB lighting</label>
+                        <label><input type="checkbox" checked> Extra fans</label>
+                        <label><input type="checkbox"> Wi-Fi card</label>
+                    </div>
+                </div>
+
+                
+                <div class="form-group">
+                    <label for="file-upload"></label>
+                    <input type="file" id="file-upload" class="file-input">
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="requirements">Extra requirements</label>
+                    <textarea id="requirements" class="textarea-field" rows="4" placeholder="Tell us about custom water cooling, specific game targets, or desk space limits..."></textarea>
+                </div>
+
+                
+                <div class="form-group checkbox-row">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#" class="accent-link">Terms & Conditions</a></label>
+                </div>
+
+                
+                <button type="submit" class="btn submit-btn">Submit request</button>
+
+            </form>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 spartanZ gaming. All rights reserved.</p>
+            <ul class="footer-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="media.html">Media</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
